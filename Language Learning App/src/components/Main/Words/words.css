@@ -1,0 +1,41 @@
+/* 
+    File     : _word-list.scss
+    Date     : Nov 28, 2016
+    Author   : Jaymes Young <jaymes@phoenixjaymes.com>
+*/
+.word-list {
+  margin-bottom: 20px; }
+  .word-list__wrap {
+    background: #ffedb9;
+    border-radius: 4px;
+    height: 250px;
+    overflow: auto;
+    padding: 5px;
+    margin-bottom: 20px; }
+    @media (min-height: 600px) {
+      .word-list__wrap {
+        height: 350px; } }
+    @media (min-height: 700px) {
+      .word-list__wrap {
+        height: 400px; } }
+
+.word-list__table {
+  border-collapse: collapse;
+  width: 100%; }
+  .word-list__table tr {
+    text-align: left; }
+  .word-list__table tr:nth-child(even) {
+    background: #fff; }
+
+.word-list__table-td-edit {
+  vertical-align: middle;
+  padding: 5px 1px 1px 0;
+  width: 23%; }
+
+.word-list__table-td-translation {
+  padding: 3px 0 3px 3px;
+  width: 77%; }
+
+
+
+
