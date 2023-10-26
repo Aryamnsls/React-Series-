@@ -1,0 +1,53 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+ion-grid, ion-row {
+  height: 100%;
+  text-align: center;
+}
+ion-card {
+  width: 100%;
+  min-height: 70%;
+}
+
+.content_container {
+  width: 100%;
+}
+
+ion-card-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.greeting {
+  margin: 20px 0;
+  font-family: 'Candara', sans-serif;
+  font-weight: bold;
+}

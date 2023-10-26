@@ -1,0 +1,123 @@
+<ion-content class="ion-justify-content-center ion-align-items-center">
+  <div class="setup_container">
+    <ion-slides style="height: 90vh;">
+      <!-- Slide 1 -->
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Пол & Възраст</ion-card-title>
+            <ion-card-subtitle>Инициализация 1/3</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <h2>Изберете пол</h2>
+            <p *ngIf="user.gender === 'male'" class="gender">Мъж</p>
+            <p *ngIf="user.gender === 'female'" class="gender">Жена</p>
+            <ion-segment value="default">
+              <ion-segment-button value="default" (click)="selectGender('male')">
+                <ion-icon name="man"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button value="segment" (click)="selectGender('female')">
+                <ion-icon name="woman"></ion-icon>
+              </ion-segment-button>
+            </ion-segment>
+            <h3>Въведете възраст</h3>
+            <ion-item>
+              <ion-label position="stacked">Въведи възраст</ion-label>
+              <ion-input placeholder="Възраст..." type="number" [(ngModel)]="user.age"></ion-input>
+            </ion-item>
+            <ion-item class="ion-margin-top">
+                <ion-label position="stacked">Въведи име</ion-label>
+                <ion-input placeholder="Име..." [(ngModel)]="user.name"></ion-input>
+              </ion-item>
+          </ion-card-content>
+          <div class="button_margin">
+            <ion-button
+              expand="block"
+              class="next_button"
+              (click)="nextSlide()">
+              Напред
+              <ion-icon name="arrow-forward-sharp" slot="end"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-card>
+      </ion-slide>
+      <!-- Slide 2 -->
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Височина & Тегло</ion-card-title>
+            <ion-card-subtitle>Инициализация 2/3</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item fill="solid">
+              <ion-label position="floating">Височина</ion-label>
+              <ion-input type="number" [(ngModel)]="user.height"></ion-input>
+              <ion-note slot="helper">Въведете височина в CM</ion-note>
+            </ion-item>
+            <ion-item fill="solid ion-margin-top">
+              <ion-label position="floating">Тегло</ion-label>
+              <ion-input type="number" [(ngModel)]="user.weight"></ion-input>
+              <ion-note slot="helper">Въведете тегло в KG</ion-note>
+            </ion-item>
+          </ion-card-content>
+          <div class="button_margin">
+            <ion-button
+              expand="block"
+              class="next_button"
+              (click)="nextSlide()">
+              Напред
+              <ion-icon name="arrow-forward-sharp" slot="end"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-card>
+      </ion-slide>
+      <!-- Slide 3 -->
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Активност & Цел</ion-card-title>
+            <ion-card-subtitle>Инициализация 3/3</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <h3>Изберете активност</h3>
+            <ion-list>
+              <ion-item>
+                <ion-select class="select-full-width" placeholder="Моля изберете седмична активност" [(ngModel)]="user.activity">
+                  <ion-select-option value="sedentary">Ниска (слаба или никаква активност)</ion-select-option>
+                  <ion-select-option value="lightly_active">Леко активен (1–3 дни/седмица)</ion-select-option>
+                  <ion-select-option value="moderately_active">Активен (3–5 дни/седмица)</ion-select-option>
+                  <ion-select-option value="very_active">Високо активен (6–7 дни/седмица)</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+            <h3>Изберете цел</h3>
+            <ion-list>
+              <ion-radio-group value="loose_weight" [(ngModel)]="user.goal">
+                <ion-item>
+                  <ion-label>Понижаване на тегло</ion-label>
+                  <ion-radio slot="end" value="loose_weight"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Поддържане на тегло</ion-label>
+                  <ion-radio slot="end" value="maintain_weight"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Повишаване на тегло</ion-label>
+                  <ion-radio slot="end" value="gain_weight"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-list>
+          </ion-card-content>
+          <div class="button_margin">
+            <ion-button
+              expand="block"
+              class="next_button"
+              (click)="nextSlide()">
+              Завършване
+            </ion-button>
+          </div>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

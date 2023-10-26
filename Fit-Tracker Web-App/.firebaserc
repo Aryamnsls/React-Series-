@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fit-keeper": {
+      "hosting": {
+        "app": [
+          "fit-keeper"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fit-keeper"
+  }
+}

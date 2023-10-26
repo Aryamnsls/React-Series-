@@ -1,0 +1,50 @@
+<ion-grid *ngIf="user">
+  <ion-list>
+    <ion-row>
+      <ion-item>
+        <ion-col size="5">
+          <h4>Тегло</h4>
+        </ion-col>
+        <ion-col class="flex_center">
+          <h4 [textContent]="user.weight"></h4>
+          <ion-button fill="clear" (click)="editValue('weight', 'number')">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-col size="5">
+          <h4>Активност</h4>
+        </ion-col>
+        <ion-col class="flex_center">
+          <h4 [textContent]="activityText"></h4>
+          <ion-button fill="clear" (click)="editValue('activity', 'list')">
+            <ion-icon name="list-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-col size="5">
+          <h4>Цел</h4>
+        </ion-col>
+        <ion-col class="flex_center">
+          <h4 [textContent]="goalText"></h4>
+          <ion-button fill="clear" (click)="editValue('goal', 'list')">
+            <ion-icon name="list-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+    <ion-row class="calorie_goal">
+      <ion-item>
+        <ion-col>
+          <h4>Калорийна цел: {{calorieGoal}} kcal/ден</h4>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+  </ion-list>
+</ion-grid>

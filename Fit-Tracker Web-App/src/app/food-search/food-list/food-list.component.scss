@@ -1,0 +1,35 @@
+ion-item {
+    cursor: pointer;
+}
+ion-list .card_container {
+    display: block;
+    margin: 0 auto;
+    max-width: 512px;
+}
+ion-card {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 50%);
+    max-width: 512px;
+    display: block;
+    margin: 15px;
+    cursor: pointer;
+}
+h4 {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 4px;
+    font-family: 'Candara';
+}
+.name_container {
+    display: flex;
+    align-items: center;
+}
+.icon_container {
+    text-align: right;
+}
+.icon_container ion-icon {
+    font-size: 36px;
+    margin-top: 4px;
+}

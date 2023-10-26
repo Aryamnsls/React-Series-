@@ -1,0 +1,29 @@
+<app-home-header></app-home-header>
+<ion-content>
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8">
+          <ion-searchbar
+            animated="true"
+            (ionChange)="inputChanged($event)"
+            [value]="query"
+            placeholder="Търси храна"></ion-searchbar>
+        </ion-col>
+        <ion-col>
+          <ion-button class="favourites_button" (click)="openFavourites()">
+            <ion-icon name="heart-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <app-food-list
+      *ngIf="foundFoods.length > 0 && !fetching"
+      [foodList]="foundFoods"
+      (foodSelected)="onFoodSelected($event)"></app-food-list>
+  </div>
+  <app-favourites
+    *ngIf="favouritesOpened"
+    (closed)="closeFavourites()"></app-favourites>
+</ion-content>
+<app-scan-food-barcode></app-scan-food-barcode>

@@ -1,0 +1,95 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+body.scanner-active {
+  --background: transparent;
+  --ion-background-color: transparent;
+}
+
+ion-accordion-group{
+    ion-accordion {
+        .ion-accordion-toggle-icon {
+            color: #fff;
+        }
+    }
+}
+
+.alert-wrapper{
+  max-width: unset !important;
+  width: 80% !important;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Candara';
+    src: url('./assets/fonts/Candara.ttf');
+}
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('./assets/fonts/BarlowCondensed-Regular.ttf');
+}
+
+.md body[color-theme="dark"] .reverse-title {
+  color: #ffffff;
+}
+
+ion-button, p {
+    font-family: 'OpenSans', sans-serif;
+}
+
+ion-label {
+    font-family: 'BarlowCondensed', sans-serif;
+}
+
+.fix_nav {
+    margin-top: 90px!important;
+}
+.fs_width {
+    width: 100vw;
+}
+.container {
+    max-width: 680px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 680px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+<div class="nutrient_container">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="icon_container {{key}}">
+          <ion-icon src="/assets/icon/protein.svg" *ngIf="key === 'protein'"></ion-icon>
+          <ion-icon src="/assets/icon/carbs.svg" *ngIf="key === 'carbs'"></ion-icon>
+          <ion-icon src="/assets/icon/fat.svg" *ngIf="key === 'fat'"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col sizeSm="8" sizeXs="12">
+        <p class="stacked_label">{{key.charAt(0).toUpperCase() + key.slice(1)}}</p>
+        <p>{{value}}g/{{goal}}g</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

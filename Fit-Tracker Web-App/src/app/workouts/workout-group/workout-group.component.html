@@ -1,0 +1,10 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{groupName}}</ion-card-title>
+  </ion-card-header>
+  <ion-slides pager="true" [options]="slideOptions">
+    <ion-slide *ngFor="let image of images" (click)="onWorkoutSelected('/assets/img/workouts/' + image)">
+      <img [src]="'/assets/img/workouts/' + image">
+    </ion-slide>
+  </ion-slides>
+</ion-card>

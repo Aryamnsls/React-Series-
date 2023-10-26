@@ -1,0 +1,63 @@
+<ion-grid>
+    <ion-row>
+        <ion-col sizeXs="12" sizeMd="8">
+            <ion-grid>
+                <ion-row>
+                    <ion-col sizeXl="8" size="12">
+                        <div class="graph_container">
+                            <canvas #graph></canvas>
+                        </div>
+                    </ion-col>
+                    <ion-col class="flex_center">
+                        <div>
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col size="12">
+                                        <div class="label_container text_center">
+                                            <h4>{{trackingService.calorieGoal}}</h4>
+                                            <h6 class="label_sm">KCAL</h6>
+                                        </div>
+                                    </ion-col>
+                                    <ion-col size="6" class="second_row">
+                                        <div class="label_container">
+                                            <h4>{{caloriesLeft.toFixed()}}</h4>
+                                            <h6 class="label_sm">Оставащи калории</h6>
+                                        </div>
+                                    </ion-col>
+                                    <ion-col class="second_row">
+                                        <div class="label_container calories_left">
+                                            <h4>{{(trackingService.calorieGoal - caloriesLeft).toFixed()}}</h4>
+                                            <h6 class="label_sm">Консумирани калории</h6>
+                                        </div>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-col>
+        <ion-col class="flex_center" *ngIf="macroGoal">
+            <ion-row>
+                <ion-col sizeXs="4" sizeMd="12">
+                    <app-tracker-nutrient
+                      [macroGoal]="macroGoal"
+                      [key]="'protein'"
+                      [value]="macros.protein"></app-tracker-nutrient>
+                </ion-col>
+                <ion-col sizeXs="4" sizeMd="12">
+                    <app-tracker-nutrient
+                      [macroGoal]="macroGoal"
+                      [key]="'carbs'"
+                      [value]="macros.carbs"></app-tracker-nutrient>
+                </ion-col>
+                <ion-col sizeXs="4" sizeMd="12">
+                    <app-tracker-nutrient
+                      [macroGoal]="macroGoal"
+                      [key]="'fat'"
+                      [value]="macros.fats"></app-tracker-nutrient>
+                </ion-col>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+</ion-grid>

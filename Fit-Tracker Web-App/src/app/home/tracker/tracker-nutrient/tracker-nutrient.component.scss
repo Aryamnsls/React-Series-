@@ -1,0 +1,45 @@
+ion-col:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_container {
+    padding: 13px 15px;
+    width: max-content;
+    border-radius: 50%;
+    background: var(--ion-text-reverse);
+}
+.icon_container ion-icon {
+    font-size: 22px;
+    color: var(--ion-text);
+}
+.stacked_label {
+    color: gray;
+    margin: 10px 0 3px;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.protein {
+    -webkit-box-shadow: 0px 0px 10px 7px #9fcc5866;
+    -moz-box-shadow: 0px 0px 10px 7px #9fcc5866;
+    box-shadow: 0px 0px 10px 7px #9fcc5866;
+}
+.carbs {
+    -webkit-box-shadow: 0px 0px 10px 7px #e7dcf2;
+    -moz-box-shadow: 0px 0px 10px 7px #e7dcf2;
+    box-shadow: 0px 0px 10px 7px #e7dcf2;
+}
+.fat {
+    -webkit-box-shadow: 0px 0px 10px 7px #cfebfd;
+    -moz-box-shadow: 0px 0px 10px 7px #cfebfd;
+    box-shadow: 0px 0px 10px 7px #cfebfd;
+}
+
+@media only screen and (max-width: 576px) {
+    .nutrient_container {
+        text-align: center;
+    }
+}

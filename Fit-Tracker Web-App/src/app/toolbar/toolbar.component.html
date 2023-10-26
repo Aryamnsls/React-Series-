@@ -1,0 +1,27 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom" color="light">
+    <!-- Home -->
+    <ion-tab-button tab="home">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-tab-button>
+    <!-- History -->
+    <ion-tab-button tab="meal_history">
+      <ion-icon name="calendar-outline"></ion-icon>
+    </ion-tab-button>
+    <!-- Food -->
+    <ion-tab-button></ion-tab-button>
+    <!-- Workouts -->
+    <ion-tab-button tab="workouts">
+      <ion-icon name="barbell-outline"></ion-icon>
+    </ion-tab-button>
+    <!-- Settings -->
+    <ion-tab-button tab="settings">
+      <ion-icon name="settings-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" *ngIf="showAddButton">
+    <ion-fab-button (click)="onAddFood()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-tabs>

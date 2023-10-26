@@ -1,0 +1,63 @@
+<ion-grid *ngIf="user">
+  <ion-list>
+    <ion-row>
+      <ion-item>
+        <ion-col size="5">
+          <h4>Име</h4>
+        </ion-col>
+        <ion-col class="flex_center">
+          <h4 [textContent]="user.name"></h4>
+          <ion-button fill="clear" (click)="editValue('name')">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-col size="5">
+          <h4>Възраст</h4>
+        </ion-col>
+        <ion-col class="flex_center">
+          <h4 [textContent]="user.age"></h4>
+          <ion-button fill="clear" (click)="editValue('age', 'number')">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-col size="5">
+          <h4>Височина</h4>
+        </ion-col>
+        <ion-col class="flex_center">
+          <h4>{{user.height}}cm</h4>
+          <ion-button fill="clear" (click)="editValue('height', 'number')">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-col size="5">
+          <h4>Тегло</h4>
+        </ion-col>
+        <ion-col class="flex_center" (click)="editValue('weight', 'number')">
+          <h4>{{user.weight}}kg</h4>
+          <ion-button fill="clear">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+    <ion-row class="calorie_goal">
+      <ion-item>
+        <ion-col>
+          <h4>Калорийна цел: {{calorieGoal}} kcal/ден</h4>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+  </ion-list>
+</ion-grid>

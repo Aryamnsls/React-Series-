@@ -1,0 +1,10 @@
+<app-home-header></app-home-header>
+<ion-content [fullscreen]="true" *ngIf="loaded">
+    <div class="container">
+        <h1 class="greeting">Здравей, {{username}}</h1>
+        <app-day-selector></app-day-selector>
+        <app-tracker [macros]="macros"></app-tracker>
+        <app-meal-history></app-meal-history>
+        <app-weight-tracker></app-weight-tracker>
+    </div>
+</ion-content>

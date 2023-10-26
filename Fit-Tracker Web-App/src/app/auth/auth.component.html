@@ -1,0 +1,76 @@
+<ion-content>
+  <div class="auth_container">
+    <div class="header">
+      <img src="assets/img/logo.png" alt="FitKeeper Logo">
+    </div>
+
+    <div class="heading_text" [ngSwitch]="authMode">
+        <div *ngSwitchCase="'login'">
+          <h1>Добре дошъл,</h1>
+          <h3>Въведи своята информация</h3>
+        </div>
+        <div *ngSwitchCase="'register'">
+          <h1>Регистрация,</h1>
+          <h3>Създай нов профил</h3>
+        </div>
+      </div>
+
+      <form [formGroup]="credentials" (ngSubmit)="authorizeUser(authMode)">
+        <div class="input_container">
+          <!--  Email  -->
+          <ion-item fill="outline" class="ion-margin-bottom">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" placeholder="Въведи email..." formControlName="email"></ion-input>
+            <ion-note slot="error" *ngIf="(email.dirty || email.touched) && email.errors">Невалиден email</ion-note>
+          </ion-item>
+
+          <!--  Password  -->
+          <ion-item fill="outline" class="ion-margin-bottom">
+            <ion-label position="floating">Парола</ion-label>
+            <ion-input type="password" placeholder="Въведи парола..." formControlName="password"></ion-input>
+            <ion-note slot="error" *ngIf="password.touched && password.errors">Паролата трябва да е минимум 8 символа</ion-note>
+          </ion-item>
+
+          <!--  Confirm password  -->
+          <ion-item fill="outline" class="ion-margin-bottom" *ngIf="authMode === 'register'">
+            <ion-label position="floating">Потвърди парола</ion-label>
+            <ion-input type="password" placeholder="Въведи парола отново..." formControlName="confirmPassword"></ion-input>
+            <ion-note slot="error" *ngIf="confirmPassword.touched && confirmPassword.errors">Паролата трябва да е минимум 8 символа</ion-note>
+          </ion-item>
+        </div>
+
+        <ion-button
+          *ngIf="authMode === 'login'"
+          expand="block"
+          type="submit"
+          [disabled]="email.invalid || password.invalid">Влез</ion-button>
+        <ion-button
+          *ngIf="authMode === 'register'"
+          expand="block"
+          type="submit">Регистрирай се</ion-button>
+        <div class="hl"></div>
+        <ion-button
+          type="button"
+          expand="block"
+          class="google_button"
+          (click)="authorizeUser(authMode, 'google')">
+          <ion-icon name="logo-google"></ion-icon> Влез с Google
+        </ion-button>
+      </form>
+      <div class="ion-text-center">
+        <ion-button
+          *ngIf="authMode === 'register'"
+          fill="clear"
+          type="button"
+          (click)="switchAuthMode()">Имаш профил? <span>Вход</span></ion-button>
+        <ion-button
+          *ngIf="authMode === 'login'"
+          fill="clear"
+          type="button"
+          (click)="switchAuthMode()">Нямаш профил? <span>Регистрация</span></ion-button>
+      </div>
+      <div class="privacy_policy ion-text-center ion-margin-top">
+        <a href="https://fitkeeper-static.000webhostapp.com/" target="_blank">Политика за поверителност</a>
+      </div>
+  </div>
+</ion-content>
