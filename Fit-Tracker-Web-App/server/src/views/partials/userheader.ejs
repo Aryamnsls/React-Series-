@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Fitness Pal</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link <%= typeof active_menu != 'undefined' && active_menu === 'dashboard' ? 'active' : '' %>" href="/dashboard">Dashboard</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= typeof active_menu != 'undefined' && active_menu === 'workouts' ? 'active' : '' %>" href="/workouts">Workouts</a>
+      </li>
+    </ul>
+  </nav>

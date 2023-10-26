@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.0/dist/bootstrap-float-label.min.css"/>
+    <style>
+        .has-float-label label::after {
+            background: none;
+        }
+        .has-float-label label {
+            top: -1.2em;
+        }
+    </style>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header', {active_menu:'login'}); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Login to your account</h1>
+        <p>enter your credentials</p>
+        <%- include('../forms/signup-form'); %>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

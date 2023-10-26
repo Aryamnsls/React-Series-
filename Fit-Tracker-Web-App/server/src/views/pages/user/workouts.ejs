@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../../partials/userheader', {active_menu:'workouts'}); %>
+</header>
+
+<main>
+
+
+        <% routines.map((routine)=>{ %>
+            <div class="jumbotron">
+              <h1><%= routine.name %> <small class="muted">(<%= routine.exercises.length %>)</small></h1>
+              <p><small><%= routine.description %></small></p>
+              <ul>
+
+                      <% routine.exercises.map((exercise) =>{ %>
+                        <li><p><%= exercise.kind %> = <%= exercise.exercise.name %> <small>(<%= exercise._id %>) </small></p> </li>
+                      <% }) %>
+
+              </ul>
+            </div>
+        <% }) %>
+
+
+</main>
+
+<footer>
+    <%- include('../../partials/footer'); %>
+</footer>
+
+</body>
+</html>
