@@ -1,36 +1,39 @@
-## :rocket: Hackernews Redesign v2 ![Vercel](https://vercelbadge.vercel.app/api/rocktimsaikia/hackernews-redesign)
+Creating a Hacker News web app using Next.js involves several steps. Here's a concise, step-by-step guide in around 200 words:
 
-> A minimal looking hackernews client built with Next.js and TailwindCSS. <br/>
-> This is v2 of the [**original redesign**](https://github.com/RocktimSaikia/hacker-news-redesign/tree/master) that I did 2 years ago.
+1. **Project Setup:**
+   Initialize a new Next.js project with the `create-next-app` command to create the initial structure.
 
-<br/>
+2. **API Integration:**
+   Utilize the Hacker News API (https://github.com/HackerNews/API) to fetch news stories, comments, and other relevant data.
 
-<div align="center" margin-bottom="0">
-  <a href="https://hackernews-redesign.netlify.com" target="_blank">
-    <img alt="Hacker News Clone Demo" width="auto" height="auto" src="https://i.ibb.co/S7VNsGN/screely-1617856041421.png">
-  </a>
-</div>
-<br/>
+3. **UI Components:**
+   Create React components for displaying news articles, comments, and user profiles. Make sure the design is user-friendly and responsive.
 
-## :sparkles: Techstack
+4. **Routing:**
+   Utilize Next.js's dynamic routing to create pages for viewing individual news stories, user profiles, and comments.
 
-- [**Next.js**](https://nextjs.org/) - Framework
-- [**TailwindCSS**](https://tailwindcss.com/) - Styling
-- [**Framer motion**](https://www.framer.com/) - Animation
-- [**SWR**](https://swr.vercel.app/) - Data fetching
+5. **Homepage:**
+   Develop a homepage that lists top, new, and best stories. Allow users to switch between these categories.
 
-## :zap: About
+6. **User Authentication (Optional):**
+   Implement user authentication if you want users to be able to comment or upvote stories. Libraries like NextAuth.js can be helpful.
 
-I originally did a HN redesign 2 years ago ([**Hackernews Redesign v1**](https://github.com/RocktimSaikia/hacker-news-redesign/tree/master)) which was my first react project. But recently I thought of redesigning the same application with Next.js. So I did. .
+7. **Comments and Replies:**
+   Design a system for viewing comments and replies, possibly with nesting and threading for readability.
 
-I am not using the official HN API because it is very poorly designed which makes it very slow and not practical. I built a [**custom HN api**](https://hn-apiv0.herokuapp.com/) only for this application. And to get the comments of a post, I am using [**Algolia's hn API**](https://hn.algolia.com/api).
+8. **Upvoting and Interaction:**
+   Add functionality for users to upvote stories and comments. Update the UI dynamically when users interact.
 
-## Support
+9. **Search Functionality:**
+   Implement search features to let users find specific stories or comments.
 
-You can support me and my work right here :
+10. **Testing and Optimization:**
+    Thoroughly test the app, optimize performance, and ensure a smooth user experience.
 
-<a href="https://www.buymeacoffee.com/rocktimcodes"><img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" height="35px"/></a>
+11. **Deployment:**
+    Deploy the Hacker News web app on a hosting platform such as Vercel or Netlify.
 
-## License
+12. **Documentation:**
+    Provide clear documentation for users on how to navigate and use the app effectively.
 
-MIT 2021 © [Rocktim Saikia](https://rocktimsaikia.now.sh)
+By following these steps, you can create a Hacker News web app using Next.js, allowing users to read and interact with Hacker News content in a user-friendly and responsive environment.
