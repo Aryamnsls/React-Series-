@@ -1,0 +1,25 @@
+{
+  "name": "hackernews-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "framer-motion": "^4.1.2",
+    "next": "10.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swr": "^0.5.4",
+    "timeago.js": "^4.0.2",
+    "use-onclickoutside": "^0.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  }
+}

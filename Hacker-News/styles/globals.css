@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  button {
+    @apply outline-none focus:outline-none;
+  }
+}
+
+@layer utilities {
+  .soft-card-shadow {
+    box-shadow: rgb(51 51 51 / 10%) 0px 10px 12px;
+  }
+  .text-soft-black {
+    color: #333333;
+  }
+
+  .link-blue {
+    color: #338bf1;
+  }
+  .main-title {
+    @apply font-inter font-extrabold text-3xl mb-11;
+  }
+  .news-card {
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    backface-visibility: hidden;
+    @apply mb-4 shadow bg-white py-8 flex flex-row items-center divide-x rounded cursor-pointer;
+    @apply transition transform duration-500 ease-in-out hover:shadow-md hover:-translate-y-1 hover:scale-105;
+    @apply w-full lg:w-140;
+  }
+
+  .more-btn {
+    @apply bg-transparent border border-solid bg-gray-500 text-white font-bold uppercase text-xs  mt-5 
+    px-4 py-2 rounded mr-1 mb-1 ease-linear transition-all duration-150;
+  }
+
+  .comments-paragraph {
+    @apply text-sm text-gray-800 font-normal tracking-tight;
+  }
+  .comments-paragraph a {
+    color: #338bf1;
+  }
+
+  .comments-container pre {
+    @apply whitespace-pre-wrap;
+  }
+
+  .sidemenu-item {
+    @apply py-2 flex items-center font-medium text-base text-gray-600 cursor-pointer my-5;
+    @apply hover:text-gray-900;
+  }
+
+  .non-sidemenu-item {
+    @apply py-4 flex px-8 items-center font-medium text-sm text-gray-600;
+  }
+
+  .sidemenu-title {
+    @apply uppercase text-sm pb-2 font-medium text-gray-600 px-8;
+  }
+
+  .sidemenu-item:hover .sidemenu-icon {
+    @apply text-red-500;
+  }
+
+  .sidemenu-icon {
+    @apply w-5 h-5 mr-4 stroke-current text-gray-600 inline-block;
+  }
+
+  .fancy-undeline {
+    background-image: linear-gradient(120deg, #ec008c, #fc6767 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+  }
+
+  .fancy-undeline:hover {
+    background-size: 100% 88% !important;
+  }
+
+  .footer-text {
+    @apply text-xs;
+    color: #555555;
+  }
+
+  .bg-overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    min-height: 100%;
+    background-color: #f4f4f4;
+    opacity: 0.3;
+    background-image: radial-gradient(#444cf7 1px, #e5e5f7 1px);
+    background-size: 20px 20px;
+  }
+}
