@@ -1,11 +1,7 @@
 # :musical_note: Echo
 
-Visit website at: http://echo.codingstack.net/
-
-[![Build Status](https://travis-ci.org/dkakashi69/Echo.svg?branch=master)](https://travis-ci.org/dkakashi69/Echo)
-
 A music app made with React + Redux + Nodejs
-demo video: (https://www.youtube.com/watch?v=knqfJlnTjtQ)
+
 
 ![image](https://user-images.githubusercontent.com/47851878/124370432-f1d44d80-dca1-11eb-8eca-af7a043191f1.png)
 
