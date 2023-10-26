@@ -1,7 +1,0 @@
-{
-  "name": "Fit Keeper",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

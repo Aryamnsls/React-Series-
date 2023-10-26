@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Fit Keeper</string>
-    <string name="title_activity_main">Fit Keeper</string>
-    <string name="package_name">com.fit.keeper</string>
-    <string name="custom_url_scheme">com.fit.keeper</string>
-    <string name="server_client_id">796792034085-p3ut7338emlh34vmt72828ggle6fu5ki.apps.googleusercontent.com</string>
-</resources>
