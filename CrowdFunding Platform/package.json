@@ -1,0 +1,38 @@
+{
+  "name": "open-crowd-fund",
+  "description": "Open Crowd Fund as open source alternative to crowd fund your own projects.",
+  "version": "1.0.0",
+  "author": "Robin Wieruch <wrobin@gmx.net>",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "currency-symbol-map": "^4.0.3",
+    "firebase": "^4.6.0",
+    "gatsby": "^1.9.63",
+    "gatsby-link": "^1.6.21",
+    "gatsby-plugin-google-analytics": "^1.0.10",
+    "gatsby-plugin-manifest": "^1.0.8",
+    "gatsby-plugin-offline": "^1.0.10",
+    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-styled-components": "^1.0.5",
+    "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-remark-emoji": "0.0.1",
+    "gatsby-transformer-remark": "^1.7.17",
+    "react-stripe-checkout": "^2.6.3",
+    "react-syntax-highlighter": "^5.7.1",
+    "typography-theme-lincoln": "^0.15.11"
+  },
+  "keywords": [
+    "open crowd fund alternative"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier es5 --single-quote --write 'src/**/*.js'",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "prettier": "^1.7.4"
+  }
+}
