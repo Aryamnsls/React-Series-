@@ -1,4 +1,4 @@
-# VisRecly
+# Recommendation System
 
 ![VisRecly Demo](./assets/demo.gif)
 
