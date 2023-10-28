@@ -1,19 +1,7 @@
-# React-Series
+# VUE JS SERIES 
 
-React-Series
+1) LMS 
 
-1) DSA 450 Craker 
-
-2) Amazon CLone 
-
-3) Movie-Hub 
-
------------------x---------------------
-
-Day 11 
-
-1) Music Streaming App
-
-2) Language Learning App
-
-3) Photo Gallery App
+2) Spotify UI
+ 
+3) Reddit CLone 
