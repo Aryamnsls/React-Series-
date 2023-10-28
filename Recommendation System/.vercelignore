@@ -1,0 +1,10 @@
+.github
+.vscode
+assets
+node_modules
+dist
+!apps/dashboard/public/dist
+tmp
+tools
+.editorconfig
+README.md

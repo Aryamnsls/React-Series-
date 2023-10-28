@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@visrecly/data": ["libs/data/src/index.ts"],
+      "@visrecly/draco-core": ["libs/draco/js/build"],
+      "@visrecly/draco-web": ["libs/draco-web/src/index.ts"],
+      "@visrecly/ranking": ["libs/ranking/src/index.ts"],
+      "@visrecly/vis-tasks": ["libs/vis-tasks/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

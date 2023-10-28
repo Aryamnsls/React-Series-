@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "dashboard": "apps/dashboard",
+    "data": "libs/data",
+    "draco": "libs/draco",
+    "draco-web": "libs/draco-web",
+    "ranking": "libs/ranking",
+    "vis-tasks": "libs/vis-tasks"
+  }
+}

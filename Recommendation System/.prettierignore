@@ -1,0 +1,7 @@
+# Add files here to ignore them from prettier formatting
+
+/dist
+/coverage
+*/**/data/*.json
+libs/data/src/**/*.json
+*/**/lottie/*.json
