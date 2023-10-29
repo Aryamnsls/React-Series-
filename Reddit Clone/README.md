@@ -56,7 +56,3 @@ flask run
 - [Flask](https://flask.pooco.com) - Web Framework
 - [MongoEngine](https://github.com/MongoEngine/mongoengine) - Object-Document-Mapper for MongoDB
 
-## Meta
-
-Lucas Hild - [https://lucas-hild.de](https://lucas-hild.de)  
-This project is licensed under the MIT License - see the LICENSE file for details
