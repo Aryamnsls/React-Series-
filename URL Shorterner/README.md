@@ -1,7 +1,5 @@
 # URL-Shortener Frontend
 
-Vue.js Frontend for a [Restful URL-Shortener API](https://github.com/Buffalom/url-shortener-api).
-
 ## Project setup
 ```
 npm install
@@ -22,10 +20,4 @@ npm run build
 npm run test
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

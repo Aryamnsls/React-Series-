@@ -149,16 +149,3 @@ Scanning: 2620 files, 874 items (in 1 specified)
 25 duplicate files (in 22 sets), occupying 809 KB
 ```
 
-### Contributors
-
-<a href="https://github.com/yuhonas/free-exercise-db/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yuhonas/free-exercise-db" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-Contributions are always welcome! Please read the contribution guidelines first.
-
-### Special Thanks 🙇
-* [Ollie Jennings](https://github.com/OllieJennings) for the original dataset at [exercises.json](https://github.com/wrkout/exercises.json)
-* flaticon for the favicon see [Sports-and-competition icons created by Dragon Icons - Flaticon](https://www.flaticon.com/free-icons/sports-and-competition)
