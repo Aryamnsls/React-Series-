@@ -1,0 +1,421 @@
+{
+  "v-avatar": {
+    "attributes": [
+      "src",
+      "text",
+      "padded",
+      "size"
+    ],
+    "description": "Avatar component"
+  },
+  "v-btn": {
+    "attributes": [
+      "dropdown",
+      "pilled",
+      "circle",
+      "animated",
+      "outline",
+      "color",
+      "size"
+    ],
+    "description": "Button component"
+  },
+  "v-btn-group": {
+    "attributes": [
+      "filled"
+    ],
+    "description": "Button group for multiple buttons"
+  },
+  "v-badge": {
+    "attributes": [
+      "content",
+      "position",
+      "color"
+    ],
+    "description": "Badge for every element"
+  },
+  "v-card": {
+    "attributes": [
+      "animated",
+      "equalHeight"
+    ],
+    "description": "Component for a simple card wrapper"
+  },
+  "v-card-actions": {
+    "description": "Add a action bar to the card"
+  },
+  "v-card-body": {
+    "description": "Add a card body for the card"
+  },
+  "v-card-title": {
+    "description": "Add a card title for the card. Useful in the card image component"
+  },
+  "v-card-subtitle": {
+    "description": "Add a card subtitle for the card. Useful in the card image component"
+  },
+  "v-card-footer": {
+    "description": "Add a card footer for the card"
+  },
+  "v-card-image": {
+    "attributes": [
+      "image"
+    ],
+    "description": "Set the image of the card"
+  },
+  "v-code": {
+    "attributes": [
+      "lang",
+      "dark"
+    ],
+    "description": "Code component for displaying code"
+  },
+  "v-container": {
+    "attributes": [
+      "noPadding",
+      "fluid"
+    ],
+    "description": "Containerize all Childcomponents"
+  },
+  "v-divider": {
+    "attributes": [
+      "short",
+      "vertical",
+      "content"
+    ],
+    "description": "Displays a simple horizontal line for dividing content"
+  },
+  "v-dropdown": {
+    "attributes": [
+      "right",
+      "left"
+    ],
+    "description": "Creates a simple dropdown menu"
+  },
+  "v-dropdown-item": {
+    "description": "Displays a dropdown item in a dropdown"
+  },
+  "v-footer": {
+    "attributes": [
+      "fixed"
+    ],
+    "description": "Displays a footer with a title and subtitle slot"
+  },
+  "v-footer-list": {
+    "description": "Creates a footer list for footer list items"
+  },
+  "v-footer-list-item": {
+    "attributes": [
+      "title"
+    ],
+    "description": "Creates a footer list item"
+  },
+  "v-checkbox": {
+    "attributes": [
+      "id",
+      "color",
+      "checked"
+    ],
+    "description": "Creates a checkbox item with a label described as a slot"
+  },
+  "v-input-color": {
+    "attributes": [
+      "defaultValue"
+    ],
+    "description": "Creates a simple color picker with a default value"
+  },
+  "v-form-group": {
+    "description": "Creates a form group for example a button and a input field"
+  },
+  "v-date-picker": {
+    "attributes": [
+      "date",
+      "title",
+      "information"
+    ],
+    "description": "Creates a date picker form"
+  },
+  "v-label": {
+    "description": "Creates a simple form group label"
+  },
+  "v-toggle": {
+    "attributes": [
+      "dataCheckIcon",
+      "dataUncheckIcon",
+      "name",
+      "checked",
+      "color"
+    ],
+    "description": "Creates a toggle form component"
+  },
+  "v-text-area": {
+    "description": "Creates a simple text area"
+  },
+  "v-search-bar": {
+    "description": "Creates a search bar with a optional button in a form group"
+  },
+  "v-radio-btn": {
+    "attributes": [
+      "id",
+      "name",
+      "checked",
+      "color"
+    ],
+    "description": "Creates a radio button"
+  },
+  "v-input-field": {
+    "attributes": [
+      "pilled",
+      "select",
+      "focused",
+      "success",
+      "error",
+      "size",
+      "icon"
+    ],
+    "description": "Creates a input field"
+  },
+  "v-frame": {
+    "attributes": [
+      "height"
+    ],
+    "description": "Creates a simple frame with a title, subtitle, footer and normal slot"
+  },
+  "v-row": {
+    "attributes": [
+      "noWrap",
+      "level"
+    ],
+    "description": "Creates a row in a grid"
+  },
+  "v-col": {
+    "attributes": [
+      "c",
+      "o",
+      "w",
+      "h",
+      "dynamicOffset",
+      "fluid",
+      "ignoreScreen"
+    ],
+    "description": "Creates a column in a row"
+  },
+  "v-headline": {
+    "attributes": [
+      "size",
+      "uppercase"
+    ],
+    "description": "Creates a headline that is bigger than the normal HTML tags"
+  },
+  "v-link": {
+    "attributes": [
+      "underlined",
+      "animation"
+    ],
+    "description": "Create a link in Cirrus style"
+  },
+  "v-grid": {
+    "attributes": [
+      "gap",
+      "cols"
+    ],
+    "description": "Create a simple grid with cols and gaps"
+  },
+  "v-menu": {
+    "description": "Create a beautiful looking menu"
+  },
+  "v-menu-item": {
+    "attributes": [
+      "selected"
+    ],
+    "description": "Create a item in a menu"
+  },
+  "v-menu-divider": {
+    "attributes": [
+      "label"
+    ],
+    "description": "Create a menu divider"
+  },
+  "v-modal": {
+    "attributes": [
+      "closeTarget",
+      "mId",
+      "applyDefaultCloseIcon",
+      "animation",
+      "size"
+    ],
+    "description": "Create a simple modal"
+  },
+  "v-navbar": {
+    "attributes": [
+      "fixed",
+      "dark",
+      "clear"
+    ],
+    "description": "Navbar wrapper element for creating a navbar"
+  },
+  "v-navbar-item": {
+    "attributes": [
+      "active"
+    ],
+    "description": "Create a navbar item in a navbar"
+  },
+  "v-nav-dropdown": {
+    "attributes": [
+      "animated",
+      "clickable",
+      "id"
+    ],
+    "description": "Create a navbar dropdown menu"
+  },
+  "v-nav-dropdown-item": {
+    "description": "Create a navbar dropdown item in a navbar dropdown"
+  },
+  "v-nav-region": {
+    "attributes": [
+      "position"
+    ],
+    "description": "Set the nav region for specific navbar elements"
+  },
+  "v-next-btn": {
+    "attributes": [
+      "nextText"
+    ],
+    "description": "Set the next button"
+  },
+  "v-next-prev": {
+    "description": "Wrapper component for the next prev button"
+  },
+  "v-prev-btn": {
+    "attributes": [
+      "prevText"
+    ],
+    "description": "Set the previous button"
+  },
+  "v-pagination": {
+    "attributes": [
+      "bordered"
+    ],
+    "description": "Wrapper component for the pagination component"
+  },
+  "v-pagination-item": {
+    "attributes": [
+      "selected",
+      "disabled"
+    ],
+    "description": "Creates a pagination item in a pagination component"
+  },
+  "v-parallax-element": {
+    "attributes": [
+      "speed",
+      "margin",
+      "stopValue"
+    ],
+    "description": "Creates a parallax wrapper element for displaying a parallax effect for a element"
+  },
+  "v-placeholder": {
+    "attributes": [
+      "title",
+      "subtitle"
+    ],
+    "description": "Create a placeholder component"
+  },
+  "v-placeholder-icon": {
+    "description": "Create a placeholder icon for the placeholder component"
+  },
+  "v-sidebar-item": {
+    "attributes": [
+      "dropdown",
+      "selected"
+    ],
+    "description": "Create a sidebar item in a sidebar component"
+  },
+  "v-sidebar-dropdown": {
+    "attributes": [
+      "id",
+      "showArrow"
+    ],
+    "description": "Create a dropdown menu for the sidebar component"
+  },
+  "v-sidebar-content": {
+    "description": "Create the sidebar content"
+  },
+  "v-sidebar": {
+    "attributes": [
+      "hoverEffect",
+      "sidebarClass"
+    ],
+    "description": "Create a sidebar"
+  },
+  "v-space": {
+    "attributes": [
+      "large",
+      "xlarge"
+    ],
+    "description": "Create a space between components, acts as a defined margin"
+  },
+  "v-snackbar": {
+    "attributes": [
+      "value",
+      "color",
+      "position",
+      "timeout"
+    ],
+    "description": "Create a simple snackbar"
+  },
+  "v-tabs": {
+    "attributes": [
+      "size",
+      "position",
+      "mode"
+    ],
+    "description": "Create a tabs component wrapper for tab items"
+  },
+  "v-tab": {
+    "attributes": [
+      "selected"
+    ],
+    "description": "Create a tab item in a tabs component"
+  },
+  "v-tag": {
+    "attributes": [
+      "closable",
+      "deletable",
+      "size",
+      "color",
+      "rounded"
+    ],
+    "description": "Create a simple looking tag"
+  },
+  "v-tag-container": {
+    "attributes": [
+      "grouped",
+      "rounded"
+    ],
+    "description": "Create a tag container around tags for grouping"
+  },
+  "v-tile": {
+    "attributes": [
+      "enableBoxShadow"
+    ],
+    "description": "Create a tile component"
+  },
+  "v-tile-buttons": {
+    "description": "Create a wrapper for tile buttons"
+  },
+  "v-tile-content": {
+    "attributes": [
+      "title",
+      "subtitle"
+    ],
+    "description": "Create the tile content for the tile component"
+  },
+  "v-toast": {
+    "attributes": [
+      "title",
+      "color",
+      "disableCloseFunction",
+      "closable"
+    ],
+    "description": "Create a toast component"
+  }
+}

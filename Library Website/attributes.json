@@ -1,0 +1,498 @@
+{
+  "v-avatar/src": {
+    "type": "string",
+    "description": "Source for the avatar image"
+  },
+  "v-avatar/text": {
+    "type": "string",
+    "description": "String that contains the text of the avatar"
+  },
+  "v-avatar/padded": {
+    "type": "boolean",
+    "description": "Padded for the avatar image"
+  },
+  "v-avatar/size": {
+    "type": "string",
+    "description": "Set the size of the avatar"
+  },
+  "v-btn/dropdown": {
+    "type": "boolean",
+    "description": "Set the type of the button to a dropdown"
+  },
+  "v-btn/pilled": {
+    "type": "boolean",
+    "description": "Set the button to a pilled shape"
+  },
+  "v-btn/circle": {
+    "type": "boolean",
+    "description": "Set the shape of the button to a circle"
+  },
+  "v-btn/animated": {
+    "type": "boolean",
+    "description": "Add a button animation whenever the user clicks on it"
+  },
+  "v-btn/outline": {
+    "type": "boolean",
+    "description": "Set the type of color of the button to outline"
+  },
+  "v-btn/color": {
+    "type": "string",
+    "description": "Set the color of the button"
+  },
+  "v-btn/size": {
+    "type": "string",
+    "description": "Set the size of the button"
+  },
+  "v-btn-group/filled": {
+    "type": "boolean",
+    "description": "Set the buttons group to fill"
+  },
+  "v-badge/content": {
+    "type": "string",
+    "description": "Set the content of the badge, default is 0"
+  },
+  "v-badge/position": {
+    "type": "string",
+    "description": "Set the position of the content"
+  },
+  "v-badge/color": {
+    "type": "string",
+    "description": "Set the color of the badge"
+  },
+  "v-card/animated": {
+    "type": "boolean",
+    "description": "Set if the card will get animated through e.g. an image"
+  },
+  "v-card/equalHeight": {
+    "type": "boolean",
+    "description": "Set equal height of all other cards in the row"
+  },
+  "v-card-image/image": {
+    "type": "string",
+    "description": "Set the image source. Could be a URL or you need to require the imported image"
+  },
+  "v-code/value": {
+    "type": "string",
+    "description": "Specifies the code of the component"
+  },
+  "v-code/lang": {
+    "type": "string",
+    "description": "Set the language of the code component (supported: bash, html, css, javascript)"
+  },
+  "v-code/dark": {
+    "type": "boolean",
+    "description": "Set the code component to dark mode"
+  },
+  "v-container/noPadding": {
+    "type": "boolean",
+    "description": "No padding for the container component"
+  },
+  "v-container/fluid": {
+    "type": "boolean",
+    "description": "Make the container fluid"
+  },
+  "v-divider/short": {
+    "type": "boolean",
+    "description": "Create a short divider"
+  },
+  "v-divider/vertical": {
+    "type": "boolean",
+    "description": "Display a vertical aligned divider"
+  },
+  "v-divider/content": {
+    "type": "string",
+    "description": "Displays a text between the divider"
+  },
+  "v-dropdown/right": {
+    "type": "boolean",
+    "description": "Displays the dropdown menu on the right side of the element"
+  },
+  "v-dropdown/left": {
+    "type": "boolean",
+    "description": "Displays the dropdown menu on the left side of the element"
+  },
+  "v-footer/fixed": {
+    "type": "boolean",
+    "description": "Set the footer position to fixed"
+  },
+  "v-footer-list-item/title": {
+    "type": "boolean",
+    "description": "Set the footer list item to a non clickable title footer list item"
+  },
+  "v-checkbox/id": {
+    "type": "string",
+    "description": "Set the id for the checkbox with its label"
+  },
+  "v-checkbox/color": {
+    "type": "string",
+    "description": "Set the color of the checkbox with the text"
+  },
+  "v-checkbox/checked": {
+    "type": "boolean",
+    "description": "Set the checked status of the checkbox"
+  },
+  "v-input-color/defaultValue": {
+    "type": "string",
+    "description": "Set the default value for the color picker"
+  },
+  "v-date-picker/date": {
+    "type": "string",
+    "description": "Set the default date of the date picker"
+  },
+  "v-date-picker/title": {
+    "type": "string",
+    "description": "Set the title of the date picker form"
+  },
+  "v-date-picker/information": {
+    "type": "string",
+    "description": "Set a small information label below the date picker"
+  },
+  "v-toggle/dataCheckIcon": {
+    "type": "string",
+    "description": "Set the check icon for the toggle component"
+  },
+  "v-toggle/dataUncheckIcon": {
+    "type": "string",
+    "description": "Set the uncheck icon for the toggle component"
+  },
+  "v-toggle/name": {
+    "type": "string",
+    "description": "Set the name of the input for the toggle component"
+  },
+  "v-toggle/checked": {
+    "type": "boolean",
+    "description": "Set if the toggle component is checked or not"
+  },
+  "v-toggle/color": {
+    "type": "string",
+    "description": "Set the color of the toggle component"
+  },
+  "v-radio-btn/id": {
+    "type": "string",
+    "description": "Set the id of the radio button for the label"
+  },
+  "v-radio-btn/name": {
+    "type": "string",
+    "description": "Set the name of the input field for the radio button"
+  },
+  "v-radio-btn/checked": {
+    "type": "boolean",
+    "description": "Set wether the radio button is checked or not"
+  },
+  "v-radio-btn/color": {
+    "type": "string",
+    "description": "Set the color of the radio button"
+  },
+  "v-input-field/pilled": {
+    "type": "boolean",
+    "description": "Set wether the input field is in a pilled shape"
+  },
+  "v-input-field/select": {
+    "type": "boolean",
+    "description": "Set wether the input field is a select html tag"
+  },
+  "v-input-field/focused": {
+    "type": "boolean",
+    "description": "Set wether the input field is focused by default"
+  },
+  "v-input-field/success": {
+    "type": "boolean",
+    "description": "Set the color for the input field to green"
+  },
+  "v-input-field/error": {
+    "type": "boolean",
+    "description": "Set the color for the input field to red"
+  },
+  "v-input-field/icon": {
+    "type": "boolean",
+    "description": "Add a icon for the input field that gets created by the slot of this component"
+  },
+  "v-input-field/size": {
+    "type": "string",
+    "description": "Set the size of the input field"
+  },
+  "v-frame/height": {
+    "type": "string",
+    "description": "Set the height of the frame"
+  },
+  "v-row/noWrap": {
+    "type": "boolean",
+    "description": "No wrap for the columns inside the row"
+  },
+  "v-row/level": {
+    "type": "boolean",
+    "description": "Align items in row to the same level"
+  },
+  "v-col/c": {
+    "type": "string",
+    "description": "Set the column in a 12-grid-system"
+  },
+  "v-col/o": {
+    "type": "string",
+    "description": "Define the offset for the column"
+  },
+  "v-col/w": {
+    "type": "string",
+    "description": "Set the width of the column in a 10-grid-system"
+  },
+  "v-col/h": {
+    "type": "string",
+    "description": "Set the height of the column in a 10-grid-system"
+  },
+  "v-col/dynamicOffset": {
+    "type": "string",
+    "description": "Defines the dynamic offset for the column (left, right, center)"
+  },
+  "v-col/fluid": {
+    "type": "boolean",
+    "description": ""
+  },
+  "v-col/ignoreScreen": {
+    "type": "boolean",
+    "description": "Ignore the screen and let the column expand"
+  },
+  "v-headline/size": {
+    "type": "string",
+    "description": "Set the size of the headline"
+  },
+  "v-headline/uppercase": {
+    "type": "boolean",
+    "description": "Set the headline to uppercase"
+  },
+  "v-link/underlined": {
+    "type": "boolean",
+    "description": "Set the link to a underlined style"
+  },
+  "v-link/animation": {
+    "type": "boolean",
+    "description": "Set the animation of the link"
+  },
+  "v-grid/gap": {
+    "type": "string",
+    "description": "Set the gap of the grid"
+  },
+  "v-grid/cols": {
+    "type": "string",
+    "description": "Set the columns size of the grid"
+  },
+  "v-menu-item/selected": {
+    "type": "boolean",
+    "description": "Set the menu item as selected"
+  },
+  "v-menu-divider/label": {
+    "type": "string",
+    "description": "Set the label or the title for the divider"
+  },
+  "v-modal/closeTarget": {
+    "type": "string",
+    "description": "Set the close target for the modal whenever you exit the modal"
+  },
+  "v-modal/mId": {
+    "type": "string",
+    "description": "Set the modal id"
+  },
+  "v-modal/applyDefaultCloseIcon": {
+    "type": "boolean",
+    "description": "Enable default close Icon for the modal"
+  },
+  "v-modal/animation": {
+    "type": "string",
+    "description": "Set the animation of the modal"
+  },
+  "v-modal/size": {
+    "type": "string",
+    "description": "Set the size of the modal"
+  },
+  "v-nav-region/position": {
+    "type": "string",
+    "description": "Set the position of a specific navbar region"
+  },
+  "v-nav-dropdown/animated": {
+    "type": "boolean",
+    "description": "Set the dropdown functionality to a animated style"
+  },
+  "v-nav-dropdown/clickable": {
+    "type": "boolean",
+    "description": "Set wether the dropdown is collapsed or not by default"
+  },
+  "v-nav-dropdown/id": {
+    "type": "string",
+    "description": "Set the id of the dropdown"
+  },
+  "v-navbar-item/active": {
+    "type": "boolean",
+    "description": "Set the active state of a navbar item"
+  },
+  "v-navbar/fixed": {
+    "type": "boolean",
+    "description": "Set wether the navbar should be fixed or not"
+  },
+  "v-navbar/dark": {
+    "type": "boolean",
+    "description": "Set the style of the navbar to a dark one"
+  },
+  "v-navbar/clear": {
+    "type": "boolean",
+    "description": "Set the style of the navbar to a clear one"
+  },
+  "v-prev-btn/prevText": {
+    "type": "string",
+    "description": "Set the previous text of the previous button"
+  },
+  "v-next-btn/nextText": {
+    "type": "string",
+    "description": "Set the next text of the next button"
+  },
+  "v-pagination/bordered": {
+    "type": "boolean",
+    "description": "Set the style of the pagination to bordered"
+  },
+  "v-pagination-item/selected": {
+    "type": "boolean",
+    "description": "Set the state of the item to selected"
+  },
+  "v-pagination-item/disabled": {
+    "type": "boolean",
+    "description": "Set the disabled state of the pagination item"
+  },
+  "v-parallax-element/speed": {
+    "type": "number",
+    "description": "Set the speed of the parallax effect for the element"
+  },
+  "v-parallax-element/margin": {
+    "type": "number",
+    "description": "Set the margin for the parallax element"
+  },
+  "v-parallax-element/stopValue": {
+    "type": "number",
+    "description": "Set the stop value for the parallax element"
+  },
+  "v-placeholder/title": {
+    "type": "string",
+    "description": "Set the title of the placeholder component"
+  },
+  "v-placeholder/subtitle": {
+    "type": "string",
+    "description": "Set the subtitle of the placeholder component"
+  },
+  "v-sidebar/hoverEffect": {
+    "type": "boolean",
+    "description": "Enable the hover effect of the sidebar"
+  },
+  "v-sidebar/sidebarClass": {
+    "type": "string",
+    "description": "Class prop for the sidebar"
+  },
+  "v-sidebar-dropdown/id": {
+    "type": "string",
+    "description": "Set the id of the sidebar dropdown"
+  },
+  "v-sidebar-dropdown/showArrow": {
+    "type": "boolean",
+    "description": "Enable a arrow in the sidebar dropdown menu"
+  },
+  "v-sidebar-item/dropdown": {
+    "type": "boolean",
+    "description": "Enable this sidebaritem as a dropdown item"
+  },
+  "v-sidebar-item/selected": {
+    "type": "boolean",
+    "description": "Enable the selected state of this dropdown item"
+  },
+  "v-snackbar/value": {
+    "type": "boolean",
+    "description": "Show the snackbar with a v-model integration"
+  },
+  "v-snackbar/color": {
+    "type": "string",
+    "description": "Set the color of the snackbar"
+  },
+  "v-snackbar/position": {
+    "type": "string",
+    "description": "Set the position of the snackbar on the screen"
+  },
+  "v-snackbar/timeout": {
+    "type": "number",
+    "description": "Set the timeout for the snackbar when it will vanish"
+  },
+  "v-space/large": {
+    "type": "boolean",
+    "description": "Enable large spacing in this component"
+  },
+  "v-space/xlarge": {
+    "type": "boolean",
+    "description": "Enable extra large spacing in this component"
+  },
+  "v-tabs/size": {
+    "type": "string",
+    "description": "Set the size of the tabs"
+  },
+  "v-tabs/position": {
+    "type": "string",
+    "description": "Set the position of the tabs (center, right, fill)"
+  },
+  "v-tabs/mode": {
+    "type": "string",
+    "description": "Set the mode of the tabs (depth, classic)"
+  },
+  "v-tab/selected": {
+    "type": "boolean",
+    "description": "Set the selected state of the tab item"
+  },
+  "v-tag-container/grouped": {
+    "type": "boolean",
+    "description": "Group all tags"
+  },
+  "v-tag-container/rounded": {
+    "type": "boolean",
+    "description": "Round all tags in this container"
+  },
+  "v-tag/closable": {
+    "type": "boolean",
+    "description": "Set the tag to a closable tag"
+  },
+  "v-tag/deletable": {
+    "type": "boolean",
+    "description": "Set the tag to a deletable tag"
+  },
+  "v-tag/rounded": {
+    "type": "boolean",
+    "description": "Round the tag"
+  },
+  "v-tag/size": {
+    "type": "string",
+    "description": "Set the size of the tag"
+  },
+  "v-tag/color": {
+    "type": "string",
+    "description": "Set the color of the tag"
+  },
+  "v-tile-content/title": {
+    "type": "string",
+    "description": "Set the title of the tile content"
+  },
+  "v-tile-content/subtitle": {
+    "type": "string",
+    "description": "Set the subtitle of the tile content"
+  },
+  "v-tile/enableBoxShadow": {
+    "type": "boolean",
+    "description": "Enable a box shadow for the tile component"
+  },
+  "v-toast/title": {
+    "type": "string",
+    "description": "Set the title of the toast component"
+  },
+  "v-toast/color": {
+    "type": "string",
+    "description": "Set the color of the toast component"
+  },
+  "v-toast/disableCloseFunction": {
+    "type": "boolean",
+    "description": "Disable the close functionality of the toast component"
+  },
+  "v-toast/closable": {
+    "type": "boolean",
+    "description": "Add a small close icon for the toast component"
+  }
+}

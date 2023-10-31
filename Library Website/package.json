@@ -1,0 +1,73 @@
+{
+  "name": "vue-cirrus",
+  "version": "0.7.3",
+  "private": false,
+  "description": "A Vue components library for the Cirrus CSS framework.",
+  "author": "Florian Woelki",
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build --target lib --mode production --name vue-cirrus ./src/main.ts",
+    "lint": "vue-cli-service lint",
+    "dev": "./scripts/devmode.sh && vue-cli-service serve --open"
+  },
+  "main": "./dist/vue-cirrus.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-eslint": "^4.3.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "^4.3.0",
+    "@vue/compiler-sfc": "^3.2.20",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "cirrus-ui": "^0.6.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "node-sass": "^6.0.1",
+    "pre-commit": "^1.2.2",
+    "sass-loader": "^7.1.0",
+    "typescript": "~4.1.5",
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "browsersList": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "bugs": {
+    "url": "https://github.com/FlorianWoelki/vue-cirrus/issues"
+  },
+  "homepage": "https://florianwoelki.github.io/vue-cirrus/#/",
+  "keywords": [
+    "vue",
+    "components",
+    "cirrus",
+    "framework"
+  ],
+  "license": "MIT",
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": "git+https://github.com/FlorianWoelki/vue-cirrus.git",
+  "vetur": {
+    "tags": "tags.json",
+    "attributes": "attributes.json"
+  },
+  "dependencies": {
+    "vue": "^3.2.20"
+  }
+}
