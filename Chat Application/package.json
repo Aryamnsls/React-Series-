@@ -1,0 +1,29 @@
+{
+  "name": "vue-bubble-chat",
+  "version": "1.1.1",
+  "description": "Awesome vue chat component",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "vue serve NiceHandsomeButton.vue",
+    "build": "bili --name index --plugin vue --vue.css false"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "author": "Vadym Semenets <vadym.sem18@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadymsem/vue-bubble-chat.git"
+  },
+  "keywords": ["vue", "vue-chat", "vue-component", "chat", "chat-ui", "websocket-chat", "vue-bubble", "vue-bubble-chat"],
+  "bugs": {
+    "url": "https://github.com/vadymsem/vue-bubble-chat/issues"
+  },
+  "homepage": "https://github.com/vadymsem/vue-bubble-chat#readme",
+  "license": "ISC",
+  "devDependencies": {
+    "bili": "^4.8.1",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
