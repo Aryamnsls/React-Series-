@@ -88,8 +88,6 @@ Social Media Apps like instagram, facebook , snapchat are best in the industry a
 
 ## Easy Installation:-
 
-- vscode: git clone https://github.com/Lisanle1/Social-Media-App.git
-
 > cd client
 > > npm install && npm start
 >
@@ -97,7 +95,7 @@ Social Media Apps like instagram, facebook , snapchat are best in the industry a
 > > npm install && npm run dev
 >
 
-#### Note: Use mongodb atlas url and create cloudinary account to store your images. Paste your links in process.env respectively. 
+#### Note: Use MongoDB atlas URL and create a Cloudinary account to store your images. Could you paste your links in process.env respectively? 
 
 
 ## Demo Credentials:-
