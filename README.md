@@ -1,15 +1,8 @@
-# VUE JS SERIES 
+#DAY 20 MERN STACK PROJECT 
 
-1) LMS 
+1) BUDGET TRACKER 
 
-2) Spotify UI
- 
-3) Reddit CLone 
+2) E-COMMERCE WEBSITE 
 
----------------------------x----------------------------------
+3) SOCIAL MEDIA 
 
-1) Free- Exercise Db
-
-2) News Website 
-
-3) URL Shorterner
