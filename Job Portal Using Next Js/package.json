@@ -20,7 +20,7 @@
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^9.0.0",
     "mkdirp": "^2.1.6",
-    "mongoose": "^7.0.0",
+    "mongoose": "^7.6.4",
     "multer": "^1.4.5-lts.1",
     "mv": "^2.1.1",
     "next": "13.2.3",
